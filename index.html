@@ -14,17 +14,64 @@
   <body>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
 
+
+    <!-- Textfield with Floating Label -->
+    
+    <center>'
+    <form action="#">
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+        <input class="mdl-textfield__input" type="text" id="sample3">
+        <label class="mdl-textfield__label" for="sample3">Text...</label>
+      </div>
+    </form>
+
     <!-- FAB button with ripple -->
     <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect">
       <i class="material-icons">add</i>
     </button>
+'</center>
 
-    <!-- Simple Textfield -->
-    <form action="#">
-      <div class="mdl-textfield mdl-js-textfield">
-        <input class="mdl-textfield__input" type="text" id="sample1">
-        <label class="mdl-textfield__label" for="sample1">Text...</label>
-      </div>
-    </form>
+<!-- Uses a transparent header that draws on top of the layout's background -->
+<style>
+  .demo-layout-transparent {
+    background: url('https://cdn-adventures-live.azureedge.net/adventurescache/e/9/f/f/e/4/e9ffe442939363b90662ba06a14fa2ef9c7b43ad.jpg') center / cover;
+  }
+
+  .demo-layout-transparent .mdl-layout__header,
+  .demo-layout-transparent .mdl-layout__drawer-button {
+    /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+    color: white;
+  }
+</style>
+
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Title</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+        <a class="mdl-navigation__link" href="">Link</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Title</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+      <a class="mdl-navigation__link" href="">Link</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+  </main>
+</div>
   </body>
 </html>
